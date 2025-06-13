@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mainBox{
+    display: flex;
+    margin-top: 8vh;
+    width: 60%;
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 rgb(83, 122, 133);;
+}
+.leftImage{
+    background-image: url(background.jpg);
+    background-position: center;
+    border-radius: 20px 0 0 20px;
+    width: 60vw;
+    height: auto;
+}
+.image{
+    display: flex;
+    position: relative;
+    top: 8vh;
+    padding: 0.5vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw;
+    color: white;
+    font-family: 'myfont';
+    background-color: rgba(0, 0, 0, 0.20);
+}
+.logo{
+    width: 5vw;
+}
+.rightForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(237, 237, 237);
+}
+.text{
+    font-size: 1.3vw;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+    color: rgb(42, 62, 67);
+    margin-bottom: 2vh;
+}
+.form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40vw;
+    color: rgb(42, 62, 67);
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    height: 20vh;
+    box-shadow: 0 5px 3px rgba(83, 122, 133, 0.467);
+}
+input{
+    border: 1px solid rgba(128, 128, 128, 0.525);
+    border-radius: 5px;
+    width: 14vw;
+    height: 2vh;
+}
+input::placeholder{
+    color: rgb(167, 167, 167);
+}
+input:focus::placeholder{
+    color: rgb(237, 237, 237);
+}
+input:focus{
+    background-color: rgb(237, 237, 237);
+    border: 2px solid rgb(83, 122, 133);
+}
+input:invalid{
+    background-color: rgb(237, 237, 237);
+    border: 1px solid #cd4b00;
+}
+.option{
+    width: 18vw;
+    font-size: 15px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+}
+.password-wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 3.6vw;
+}
+.btn{
+    margin: 25px 25px 0 25px;
+    color: white;
+    background-color: rgb(83, 122, 133);;
+    width: 10vw;
+    height: 6vh;
+    font-size: 1vw;
+    border: solid rgb(83, 122, 133);;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(60, 95, 104);;
+}
+.btn:hover{
+    background-color: #cd4b00;
+    border: solid #cd4b00;
+}
+.btnPass{
+    position: absolute;
+    right: 0.3vw;
+    top: 0.2vh;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.login{
+    color: rgb(42, 62, 67);
+    margin-top: 15px;
+    padding-left: 25px;
+}
+a {
+    text-decoration: none;
+    color: #cd4b00;
+    font-weight: bold;
+  }
+button:hover{
+    cursor: pointer;
+}

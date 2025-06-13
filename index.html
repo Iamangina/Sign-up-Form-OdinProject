@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up-Form</title>
+</head>
+<body>
+    <div id="mainBox">
+        <div class="leftImage">
+            <div class="image">
+                <img class="logo" src="odin-lined.png">
+                <span class="logoText">ODIN</span>
+            </div>
+        </div>
+        <div class="rightForm">
+            <div>
+                <p class="text">
+                    This is not a real online service! You know you need something like this 
+                    in your life to help you realize your deepest dreams.<br>
+                    Sign up now to get started.
+                </p>
+            </div>
+            <form action="#" method="post">
+                <div class="form">
+                    <div class="option">
+                        <label for="firstName">FIRST NAME *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="option">
+                        <label for="lastName">LAST NAME *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="option">
+                        <label for="email">EMAIL *</label>
+                        <input type="email" id="email" name="email" placeholder="email@email.com" required>
+                    </div>
+                    <div class="option">
+                        <label for="tel">PHONE NUMBER</label>
+                        <input type="tel" id="tel" name="tel" placeholder="123-456-789" pattern="[0-9]+">
+                    </div>
+                    <div class="option">
+                        <label for="password">PASSWORD *</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="password" name="password" required pattern="[\w]{8,}" placeholder="At least 8 characters long">
+                            <button type="button" class="btnPass">
+                            <img class="imgPass" src="eyeShow.png" 
+                            width="20vw"
+                            height="20vh" 
+                            alt="Toggle password visibility">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <label for="confirmPassword">CONFIRM PASSWORD *</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required pattern="[\w]{8,}">
+                    </div>
+                </div>
+                <button class="btn" type="submit">Create Account</button>
+            </form>
+            <p class="login">Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
